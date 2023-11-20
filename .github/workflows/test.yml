@@ -7,9 +7,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      #- name: Delay
-      #  uses: MintPlayer/actions/delay@v1
-      #  with:
-      #    milliseconds: '1000'
-      - name: CodeQL
-        uses: github/codeql-action/init@v2
+      - name: Delay
+        uses: MintPlayer/github-actions/delay@v1
+        with:
+          milliseconds: '1000'
+      #- name: CodeQL
+      #  uses: github/codeql-action/init@v2
