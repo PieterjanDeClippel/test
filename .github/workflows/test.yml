@@ -1,0 +1,13 @@
+name: DelayTest
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delay
+        uses: MintPlayer/actions/delay@main
+        with:
+          milliseconds: '1000'
