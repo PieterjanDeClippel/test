@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Delay
-        uses: MintPlayer/actions/delay@main
+        uses: MintPlayer/actions/delay@v1
         with:
           milliseconds: '1000'
