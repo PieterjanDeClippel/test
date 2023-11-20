@@ -7,10 +7,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Test
+      - name: Test CherryPick
         uses: MintPlayer/github-actions/cherry-pick@v1
         with:
           milliseconds: 1000
+        continue-on-error: true
+      - name: Test Delay
+        uses: MintPlayer/github-actions/delay@v1
+        with:
+          milliseconds: 1000
+        continue-on-error: true
       
       #- name: CodeQL
       #  uses: github/codeql-action/init@v2
