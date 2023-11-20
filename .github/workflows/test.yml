@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test CherryPick
-        uses: MintPlayer/github-actions/cherry-pick@v1
+        uses: MintPlayer/github-actions/cherry-pick@v2
         with:
           milliseconds: 1000
         continue-on-error: true
       - name: Test Delay
-        uses: MintPlayer/github-actions/delay@v1
+        uses: MintPlayer/github-actions/delay@v2
         with:
           milliseconds: 1000
         continue-on-error: true
