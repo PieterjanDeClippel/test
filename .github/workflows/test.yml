@@ -7,11 +7,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup git client
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
       - name: Test CherryPick
         uses: MintPlayer/github-actions/cherry-pick@main
         with:
           milliseconds: 1000
         continue-on-error: true
+        
       - name: Test Delay
         uses: MintPlayer/github-actions/delay@main
         with:
