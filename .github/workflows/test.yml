@@ -10,10 +10,10 @@ jobs:
       - name: Checkout files
         uses: actions/checkout@v4
 
-      - name: Setup git client
-        run: |
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
+      #- name: Setup git client
+      #  run: |
+      #    git config user.email "action@github.com"
+      #    git config user.name "GitHub Action"
           
       - name: Test CherryPick
         uses: MintPlayer/github-actions/cherry-pick@main
