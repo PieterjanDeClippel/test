@@ -16,7 +16,7 @@ jobs:
       #    git config user.name "GitHub Action"
           
       - name: Test CherryPick
-        uses: MintPlayer/github-actions/cherry-pick@v1.0.4
+        uses: MintPlayer/github-actions/cherry-pick@v1.0.6
         with:
           milliseconds: 1000
         continue-on-error: true
